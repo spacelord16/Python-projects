@@ -1,10 +1,10 @@
 import datetime;
 print(datetime.datetime.today().strftime("%H"));
 print(datetime.datetime.today().strftime("%M"));
-hour=int(input("Enter a Hour:"));
-minutes=int(input("Enter a Minute:"));
+Hour=int(input("Enter a Hour:"));
+Minutes=int(input("Enter a Minute:"));
 while True:
-    if Hour==int(datetime.datetime.today().strftime("%H")) and Minute==int(datetime.datetime.today().strftime("%M")):
+    if Hour==int(datetime.datetime.today().strftime("%H")) and Minutes==int(datetime.datetime.today().strftime("%M")):
         print("Alarm Raised");
         break;
     else:

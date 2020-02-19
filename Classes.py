@@ -16,3 +16,4 @@ point1.draw()
 point2=Point();
 point2.x=1;
 print(point2.x);
+point2.move()

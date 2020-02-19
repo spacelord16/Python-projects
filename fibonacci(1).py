@@ -1,19 +1,18 @@
-def fibonacci():
-    n=int(input("Enter a number"));
-    
-    i=1;
-    if n==0:
-        fib=[];
+n=int(input("Enter a number"))
+def fibonacci(n):
+    a=0
+    b=1
+    if n<0:
+        print("Incorrect output")
+    elif n==0:
+        return a
     elif n==1:
-        fib=[1];
-    elif n==2:
-        fib==[1,1];
-    elif n>2:
-        fib=[1,1];
-        while i<(n-1):
-            fib.append(fib[i] + fib[i-1]);
-            i +=1;
-        return fib;
-print(fibonacci());
-input();
-            
+        return b
+    else:
+        for i in range (2,n):
+            c=a+b
+            a=b
+            b=c
+        return b
+
+print(fibonacci(n))
