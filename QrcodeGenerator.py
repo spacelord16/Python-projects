@@ -1,5 +1,12 @@
+import io
+
 import pyqrcode
 
-url =pyqrcode.create("www.google.co.in")
-url.svg('uca-url.svg',scale=9)
-print(url.terminal(quiet_zone=1))
+url =pyqrcode.create("https://www.google.co.in")
+
+url.png('code.png', scale=9)
+
+buffer = io.BytesIO()
+url.png(buffer)
+
+print("Done..Check you folder")
