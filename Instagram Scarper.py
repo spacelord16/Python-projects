@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 
-URL="https://www.instagram.com/_aditya_1612_/"
+URL="https://www.instagram.com/akshaykumar/"
 
 def scarpe(username):
     full_url=URL.format(username)
@@ -14,6 +14,6 @@ def scarpe(username):
 
     return main_text
 
-USERNAME="Aditya Deshpande"
+USERNAME="akshay kumar"
 data=scarpe(USERNAME)
 print(data)
