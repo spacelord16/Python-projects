@@ -22,5 +22,5 @@ quit - to quit
         """);
     elif command =="quit":
         break;
-    else:
+else:
         print("Sorry ,I don't understand that");

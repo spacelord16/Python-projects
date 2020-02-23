@@ -3,4 +3,4 @@ from time import sleep
 
 while True:
     print(datetime.datetime.now().strftime("%H:%M"))
-    sleep(5)
+    sleep(60)
