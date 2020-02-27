@@ -1,24 +1,19 @@
-matrix_a=[
-    [1,2,3],
-    [4,5,6],
-    [7,8,9],
-    ]
-matrix_b=[
-    [10,11,12],
-    [13,14,15],
-    [16,17,18],
-    ]
-matrix_s=matrix_a+matrix_b
-for row in matrix_a:
-    for item in row:
-        print(item)
+X = [[12,7,3],
+    [4 ,5,6],
+    [7 ,8,9]]
 
-for row in matrix_b:
-    for item in row:
-        print(item)
+Y = [[5,8,1],
+    [6,7,3],
+    [4,5,9]]
 
-for row in matrix_s:
-    for item in row:
-        print(item)
+result = [[0,0,0],
+         [0,0,0],
+         [0,0,0]]
 
-print(matrix_s=matrix_a+matrix_b)
+
+for i in range(len(X)):
+    for j in range(len(X[0])):
+       result[i][j] = X[i][j] + Y[i][j]
+
+for r in result:
+   print(r)
