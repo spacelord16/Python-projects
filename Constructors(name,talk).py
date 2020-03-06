@@ -1,14 +1,13 @@
 class Person:
-    def __init__(self,name):
-        self.name=name;
+    def __init__(self, name):
+        self.name = name
+
     def talk(self):
-        print(f"Hi,I am {self.name}");
+        print(f"Hi,I am {self.name}")
 
 
+aditya = Person("aditya")
+aditya.talk()
 
-aditya=Person("aditya");
-aditya.talk();
-
-kshitij=Person("kshitij");
-kshitij.talk();
-
+kshitij = Person("kshitij")
+kshitij.talk()
