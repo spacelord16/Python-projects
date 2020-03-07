@@ -12,5 +12,5 @@ digit_mapping ={
 }
 output="";
 for ch in phone:
-    output += digit_mapping.get(ch,"!")+" ";
+    output += digit_mapping.get(ch,"")+" ";
 print(output);

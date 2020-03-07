@@ -1,7 +1,7 @@
-from survey import Anonymoussurvey;
+from survey import AnonymousSurvey;
 
 question="What language do you first learn to speak ?";
-my_survey=Anonymoussurvey(question);
+my_survey=AnonymousSurvey(question);
 
 my_survey.show_question();
 print("Enter 'q ' at any time to quit.\n");

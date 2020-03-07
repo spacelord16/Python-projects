@@ -2,7 +2,7 @@ import io
 
 import pyqrcode
 
-url =pyqrcode.create("https://www.google.co.in")
+url = pyqrcode.create("https://www.google.co.in")
 
 url.png('code.png', scale=9)
 

@@ -1,3 +1,6 @@
+from cgitb import strong
+
+
 def isPalindrome(string):
     left,right=0,len(string)-1
     while right>=left:

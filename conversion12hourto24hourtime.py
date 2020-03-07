@@ -10,7 +10,8 @@ def convert24(str1):
     elif str1[-2:] == "AM":
         return str1[-2:]
     else:
-        return str(int(str1[:2])+12) + str1[2:8]
+        return str(int(str1[:2]) + 12) + str1[2:8]
+
 
 input_str = input("Enter string in format HH:MM:SS AM/PM")
 
