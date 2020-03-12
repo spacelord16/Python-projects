@@ -26,46 +26,44 @@ You can upper or lower case for operations
 >>> ln for ln(natural log)
 """
 
-
 print("First open the notepad and check the information about the operators")
 import math
-first_number=float(input())
-op=input().lower()
-second_number=float(input())
+
+first_number = float(input())
+op = input().lower()
+second_number = float(input())
 
 if op == "+":
-    print(first_number,"+",second_number,"=", first_number + second_number)
+    print(first_number, "+", second_number, "=", first_number + second_number)
 elif op == "-":
-    print(first_number,"-",second_number,"=", first_number - second_number)
+    print(first_number, "-", second_number, "=", first_number - second_number)
 elif op == "*":
-    print(first_number,"*",second_number,"=", first_number * second_number)
+    print(first_number, "*", second_number, "=", first_number * second_number)
 elif op == "/":
-    print(first_number,"/",second_number,"=", first_number/second_number)
+    print(first_number, "/", second_number, "=", first_number / second_number)
 elif op == "^":
-    print(first_number,"^",second_number,"=",first_number**second_number)
+    print(first_number, "^", second_number, "=", first_number ** second_number)
 elif op == "r":
-    print(first_number,"root",second_number,"=", math.sqrt(second_number))
+    print(first_number, "root", second_number, "=", math.sqrt(second_number))
 elif op == "%":
-    print(first_number,"%",second_number,"=",first_number % second_number)
+    print(first_number, "%", second_number, "=", first_number % second_number)
 
-elif op =="!":
-    the_number= first_number=second_number
-    second_number=1
+elif op == "!":
+    the_number = first_number = second_number
+    second_number = 1
     while first_number > 1:
-        second_number*=first_number
-        first_number=first_number-1
-    print("n!(",the_number,")=", second_number)
+        second_number *= first_number
+        first_number = first_number - 1
+    print("n!(", the_number, ")=", second_number)
 elif op == "sin":
-    print("sin(",second_number,")=",math.sin(second_number))
+    print("sin(", second_number, ")=", math.sin(second_number))
 elif op == "cos":
-    print("cos(",second_number,")=",math.cos(second_number))
+    print("cos(", second_number, ")=", math.cos(second_number))
 elif op == "tan":
-    print("tan(" + str(second_number) + ")=",math.tan(second_number))
-elif op == "pie" or op=="pi" :
-    print("Pie =",math.pi)
+    print("tan(" + str(second_number) + ")=", math.tan(second_number))
+elif op == "pie" or op == "pi":
+    print("Pie =", math.pi)
 elif op == "ln":
-    print("ln(,",second_number,")=",math.log(second_number))
+    print("ln(,", second_number, ")=", math.log(second_number))
 else:
     print("Incorrect operator")
-
-

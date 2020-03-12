@@ -1,6 +1,6 @@
 # This function has a variable with
 # name same as s.
-def f() :
+def f():
     s = "SIT"
     print(s)
 

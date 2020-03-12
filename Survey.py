@@ -1,15 +1,15 @@
-from survey import AnonymousSurvey;
+from survey import AnonymousSurvey
 
-question="What language do you first learn to speak ?";
-my_survey=AnonymousSurvey(question);
+question="What language do you first learn to speak ?"
+my_survey=AnonymousSurvey(question)
 
-my_survey.show_question();
-print("Enter 'q ' at any time to quit.\n");
+my_survey.show_question()
+print("Enter 'q ' at any time to quit.\n")
 while True:
-    response=input("Language:");
+    response=input("Language:")
     if response=='q':
-        break;
+        break
     my_survey.store_response(response)
 
-print("\nThank you to everyone who participated in the survey!!!");
-my_survey.show_results();
+print("\nThank you to everyone who participated in the survey!!!")
+my_survey.show_results()
