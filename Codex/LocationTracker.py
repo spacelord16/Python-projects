@@ -16,4 +16,4 @@ fg.add_child(folium.Marker(Location=[lat, log], popup="this is my location"))
 map = folium.Map(Location=[lat, log], zoom_start=7)
 
 map.add_child(fg)
-map.save("1.html")
+map.save("index.html")
