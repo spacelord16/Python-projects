@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<h1>GOOGLE MAPS</h1>
+		<div id="map" style="width: 400px; height:400px;background:yellow">
+	   </div>
+	   <script>
+	          function myMap(){
+				  var mapOptions ={
+						  center:new google.maps.Latlng(19.0760,72.8777),
+						  zoom:10
+				  }
+					  var map = new google.maps.Map(document.getElementByld("map"),mapOptions);
+					  console.log(map);
+			  }
+			  myMap();
+		</script>
+		<script src="https://www.google.com/maps/d/u/0/viewer?msa=0&ll=20.802512945674362%2C77.9589840000001&spn=30.965053%2C24.213867&mid=165JdYRsiwFOB63SOTglDFM3gKHg&z=4=myMap"></script>
+</body></html>

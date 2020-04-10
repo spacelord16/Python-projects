@@ -1,0 +1,32 @@
+"""INSTRUCTIONS"""
+
+""PRESS RUN
+ENTER FIRST NUMBER 
+CLICK ENTER BUTTON ON THE KEYBOARD 
+ENTER OPERATOR 
+CLICK ENTER BUTTON AGAIN
+ENTER THE SECOND NUMBER 
+CLICK ENTER"" 
+
+FOR OPERATORS ENTER THE FOLLOWING
+
+You can upper or lower case for operations
+>>> + for addition
+>>> - for subtraction
+>>> * for multiplication
+>>> / for division
+>>> ^ for power 
+>>> r for root
+>>> % for modulus
+>>> pie for Pie
+>>> sin for sin(trig)
+>>> cos for cos(trig)
+>>> tan for tan(trig)
+>>> ! for factorial
+>>> ln for ln(natural log)
+
+
+
+
+
+'''First open the notepad and check the information about the operators'''

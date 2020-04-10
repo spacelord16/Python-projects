@@ -1,0 +1,11 @@
+# my_file=open()
+# print(my_file.read())
+# my_file.close()
+
+file=open("a_example.txt","r")
+print(file.read(6))
+print(file.read(12))
+print(file.read(6))
+print(file.read(10))
+print(file.read(6))
+print(file.read(8))
