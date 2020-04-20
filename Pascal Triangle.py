@@ -4,7 +4,7 @@ def pascal(n):
         for i in range(1, line + 1):
             print(c, end=" ")
             c = int(c * (line - i) / i)
-        print("")
+        print(" ")
 
 
 n = int(input("Enter number"))
