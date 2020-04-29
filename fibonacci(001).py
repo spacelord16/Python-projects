@@ -5,7 +5,7 @@ def fib(n):
         return fib(n - 1) + fib(n - 2)
 
 
-num = 5
+num = int(input("Enter a number"))
 if num <= 0:
     print("Enter valid positive number ")
 else:
