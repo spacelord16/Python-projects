@@ -3,13 +3,15 @@ import tkinter as tk
 from tkinter import *
 from tkinter import messagebox, filedialog
 
+
 # Defining CreateWidgets() function to create necessary tkinter widgets
+
 def CreateWidgets():
     linkLabel = Label(root, text="YOUTUBE LINK  :", bg="turquoise4")
     linkLabel.grid(row=1, column=0, pady=5, padx=5)
 
     root.linkText = Entry(root, width=55, textvariable=videoLink)
-    root.linkText.grid(row=1, column=1, pady=5, padx=5, columnspan = 2)
+    root.linkText.grid(row=1, column=1, pady=5, padx=5, columnspan=2)
 
     destinationLabel = Label(root, text="DESTINATION    :", bg="turquoise4")
     destinationLabel.grid(row=2, column=0, pady=5, padx=5)
@@ -20,8 +22,10 @@ def CreateWidgets():
     browseButton = Button(root, text="BROWSE", command=Browse, width=15)
     browseButton.grid(row=2, column=2, pady=5, padx=5)
 
+    # dwld == download
     dwldButton = Button(root, text="DOWNLOAD AUDIO", command=Download, width=30)
     dwldButton.grid(row=3, column=1, pady=5, padx=5)
+
 
 # Defining Browse() to select a destination folder to save the audio file
 def Browse():
@@ -33,6 +37,7 @@ def Browse():
     # Displaying the directory in the directory textbox
     downloadPath.set(dwldDirectory)
 
+
 # Defining Download() to download the video as audio file
 def Download():
     # Fetching the user-input Youtube Link and storing it in yt_link variable
@@ -43,13 +48,13 @@ def Download():
     # Specifying the configuration options for downloading the file
     audDWLDopt = {
         # Specifying to download audio in best format
-        'format':'bestaudio/best',
+        'format': 'bestaudio/best',
         # Destination to save the audio file with the title as the name
-        'outtmpl': dwldFolder+"/%(title)s.%(ext)s",
+        'outtmpl': dwldFolder + "/%(title)s.%(ext)s",
         # Converting video to audio
-        'postprocessors':[{
+        'postprocessors': [{
             # Extracting audio from the video
-            'key':'FFmpegExtractAudio',
+            'key': 'FFmpegExtractAudio',
             # Format for saving the audio (mp3, wav)
             'preferredcodec': 'mp3',
             # Quality of the audio (Audio BitRate)
@@ -64,6 +69,7 @@ def Download():
 
     # Displaying the message
     messagebox.showinfo("SUCCESS", "VIDEO CONVERTED AND DOWNLOADED AS AUDIO")
+
 
 # Creating object of tk class
 root = tk.Tk()
